@@ -11,7 +11,12 @@ def sel():
                 minPos = j
         a[i],a[minPos] = a[minPos],a[i]
 #end of def
-a = list(input("Enter prices seperated by '-':").split('-'))
+#main
+a = []
+n = int(input("Enter n:"))
+print(f"Enter {n} salaries:")
+for i in range(n):
+    a.append(int(input()))
 print("Unsorted list:",a)
 sel()
 print("Sorted list:",a)
